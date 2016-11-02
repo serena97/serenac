@@ -1,0 +1,39 @@
+# Site settings
+title: Serena Chan
+description: '2nd year Computer Science student at Kings College London'
+url: 'https://serena97.github.io/'
+baseurl: '/serenac/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Serena Chan'
+  email: serena_chan@outlook.com
+  twitter_username: serenachan20081
+  facebook_username: serena.chan.3990
+  github_username:   serena97
+  linkedin_username:  serena-chan-8b641a103
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
